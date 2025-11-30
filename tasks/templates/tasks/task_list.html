@@ -1,0 +1,7 @@
+<li>
+    {{ task.title }} - {% if task.completed %}✅{% else %}❌{% endif %}
+    [<a href="{% url 'task_toggle_complete' task.id %}">Toggle Complete</a>]
+    [<a href="{% url 'task_edit' task.id %}">Edit</a>]
+    [<a href="{% url 'task_delete' task.id %}">Delete</a>]
+</li>
+
